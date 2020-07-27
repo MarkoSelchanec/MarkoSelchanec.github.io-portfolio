@@ -1,0 +1,155 @@
+/* html {
+    overflow-y: scroll;
+} */
+
+* {
+    box-sizing: border box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/*==============================
+Contents:
+1.Misc
+2.Header
+2.Body
+3.Footer
+
+==========*/
+
+/*==============================
+1.Misc 
+==========*/
+
+.hide {
+    display: none;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.apply-flex {
+    display: flex;
+}
+
+.svg-color-blue {
+    filter: invert(61%) sepia(99%) saturate(5880%) hue-rotate(184deg) brightness(88%) contrast(103%);
+}
+
+/*==============================
+2.Header 
+==========*/
+
+header {
+    background: #3c3c3c;
+    height: 2.5em;
+    width: 100%;
+}
+  
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar-dropdown {
+    background-color: red;
+    position: absolute;
+    transition: .5s;
+    left: -200%;
+    top: 5rem;
+}
+
+.show {
+    left: 0;
+}
+
+.navbar-list {
+    padding-top: 6px;
+    list-style-type: none;
+}
+
+.navbar-list li {
+    margin-right: 3px;
+}
+
+ul a {
+    font-size: 20px;
+    padding: 7px 13px;
+    text-decoration: none;
+    color: #c4c4c4;
+}
+
+.active, ul a:hover {
+    color: #c4c4c4;
+    background-color: #505050;
+}
+
+
+.nav-img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+.nav-burger {
+    position: absolute;
+    margin-left: 2.5em;
+    top: .5em;
+}
+
+.nav-burger-img {
+    height: 4em;
+}
+
+@media (max-width: 800px) {
+    
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        height: 5em;
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+    .nav-dropdown {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-list {
+        margin: 0 auto;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2.5em;
+    }
+
+    .navbar-list li {
+        margin: 10px;
+    }
+
+    ul a {
+        font-size: 2rem;
+    }
+
+    .nav-media {
+        margin-top: 2.5em;
+        align-self: center;
+    }
+
+    .nav-media img {
+        height: 4em;
+        margin: 2.5em;
+    }
+}
