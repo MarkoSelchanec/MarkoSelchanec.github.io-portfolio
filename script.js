@@ -3,6 +3,8 @@ const navMedia = document.getElementsByClassName("nav-outer-media")[0];
 const nav = document.getElementsByClassName("navbar")[0];
 const navDrop = document.getElementsByClassName("navbar-dropdown")[0];
 
+const meAvatar = document.getElementsByClassName("content-avatar")[0];
+const meAvatarLink = document.getElementById("content-avatar");
 const burBar = document.getElementsByClassName("nav-burger")[0];
 
 
@@ -40,4 +42,11 @@ window.addEventListener("resize", windowSizeElements)
 
 burBar.addEventListener("click", () => {
     navDrop.classList.toggle("show");
+})
+
+meAvatarLink.addEventListener("mouseenter", () => {
+    meAvatar.setAttribute("src", "images/me22.png")
+})
+meAvatarLink.addEventListener("mouseleave", () => {
+    meAvatar.setAttribute("src", "images/me2.png")
 })
