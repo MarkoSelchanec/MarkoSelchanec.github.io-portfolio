@@ -53,6 +53,7 @@ header {
     background: #3c3c3c;
     height: 2.5em;
     width: 100%;
+    z-index: 1;
 }
   
 .navbar {
@@ -177,10 +178,11 @@ ul a {
 ==========*/
 
 main {
-    margin-top: 5em;
+    padding: 5em 0;
+    margin: 0 auto;
 }
 
-.content-container {
+.about-me-header {
     padding: 2em 0;
 }
 
@@ -200,5 +202,159 @@ main {
 @media (max-width: 800px) {
     .content-name {
         flex-direction: column;
+    }
+}
+
+.content-description {
+    text-align: center;
+    color: #007acc;
+    font-size: 1.3rem;
+}
+
+.about-me-container {
+    width: 95%;
+    background-color: #3c3c3c;
+    color: #fff9f4;
+    margin: 1em auto;
+}
+
+.about-me-text {
+    width: 80%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.about-me-concepts {
+    padding: 1em 0;
+    background-color: #2d2d2d;
+    text-align: center;
+    flex-direction: column;
+    color: #ca7020;
+}
+
+.sub-container {
+    margin: 0 auto;
+}
+
+.sub-container p {
+    margin: 1em 0;
+}
+
+.about-me-images {
+    height: 150px;
+}
+
+.btn-container {
+    width: 95%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-button {
+    margin: 2px 0;
+    width: 100%;
+    font-size: 3em;
+    background-color: #2d2d2d;
+    color: #8b8b8b;
+    border: none;
+    outline: none;
+    height: 100px;
+    color: #ca7020;
+    cursor: pointer;
+}
+
+.content-button span {
+    color: #fff9f4;
+}
+
+.content-container {
+    width: 95%;
+    margin: 2px auto;
+    background-color: #2d2d2d;
+    color: #e7e7e7;
+    height: 350px;
+}
+
+@media (min-width: 400px) {
+    .sub-container {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 1em auto;
+    }
+}
+
+@media (min-width: 450px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media (min-width: 600px) {
+    main {
+        padding: 2.5em 0;
+    }
+
+    .content-button {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 800px) {
+    main {
+        width: 60%;
+    }
+
+    .content-button {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .about-me-images {
+        height: 110px;
+    }
+
+    .about-me-concepts {
+        padding: .5em 1em;
+    }
+
+    .sub-container {
+        width: 33%;
+    }
+
+    .sub-container p {
+        margin: 0;
+    }
+
+    .sub-container {
+        flex-direction: column;
+    }
+
+    .btn-container {
+        flex-direction: row;
+    }
+
+    .about-me-concepts {
+        flex-direction: row;
+    }
+
+    .content-button {
+        width: 33%;
+    }
+}
+
+@media (min-width: 1360px) {
+
+    .sub-container {
+        flex-direction: row;
+    }
+    
+    .content-button {
+        font-size: 2.5em;
     }
 }
