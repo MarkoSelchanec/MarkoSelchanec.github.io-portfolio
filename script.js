@@ -6,8 +6,8 @@ const navDrop = document.getElementsByClassName("navbar-dropdown")[0];
 const meAvatar = document.getElementsByClassName("content-avatar")[0];
 const meAvatarLink = document.getElementById("content-avatar");
 const burBar = document.getElementsByClassName("nav-burger")[0];
-
-
+const contentBtns = [...document.getElementsByClassName("content-button")];
+const contentPages = [...document.getElementsByClassName("content-container")];
 
 // Resize nav
 
@@ -49,4 +49,22 @@ meAvatarLink.addEventListener("mouseenter", () => {
 })
 meAvatarLink.addEventListener("mouseleave", () => {
     meAvatar.setAttribute("src", "images/me2.png")
+})
+
+// Content-btns
+
+contentBtns[0].addEventListener("click", () => {
+    contentPages[0].classList.remove("hide");
+    contentPages[1].classList.add("hide");
+    contentPages[2].classList.add("hide"); 
+})
+contentBtns[1].addEventListener("click", () => {
+    contentPages[1].classList.remove("hide");
+    contentPages[0].classList.add("hide");
+    contentPages[2].classList.add("hide");
+})
+contentBtns[2].addEventListener("click", () => {
+    contentPages[2].classList.remove("hide");
+    contentPages[0].classList.add("hide");
+    contentPages[1].classList.add("hide");
 })
