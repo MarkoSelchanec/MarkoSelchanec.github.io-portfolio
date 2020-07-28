@@ -18,15 +18,16 @@
 
             <div class="apply-flex">
                 <ul class="navbar-list apply-flex">
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#content-1" class="btn-projects">Projects</a></li>
+                    <li><a href="#content-2" class="btn-skills">Skills</a></li>
+                    <li><a href="#content-3" class="btn-contact">Contact</a></li>
                 </ul>
             </div>
 
             <div class="nav-outer-media">
-                <a href="#"><img class="nav-img svg-color-blue" src="images/github-brands.svg" alt="github link"></a>
-                <a href="#"><img class="nav-img svg-color-blue" src="images/linkedin-brands.svg" alt="linkedIn link"></a>
+                <a href="Marko.Selchanec.CV.pdf" target="_blank"><img class="nav-img svg-color-blue" src="images/cv.svg" alt="CV link"></a>
+                <a href="https://github.com/MarkoSelchanec" target="_blank"><img class="nav-img svg-color-blue" src="images/github-brands.svg" alt="github link"></a>
+                <a href="https://www.linkedin.com/in/marko-selchanec-8a208b1ab/" target="_blank"><img class="nav-img svg-color-blue" src="images/linkedin-brands.svg" alt="linkedIn link"></a>
             </div>
                
         </nav>
@@ -35,13 +36,14 @@
 
             <div class="nav-dropdown apply-flex">
                 <ul class="navbar-list apply-flex">
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#content-1" class="btn-projects">Projects</a></li>
+                    <li><a href="#content-2" class="btn-skills">Skills</a></li>
+                    <li><a href="#content-3" class="btn-contact">Contact</a></li>
                 </ul>
                 <div class="nav-media">
-                    <a href="#"><img class="svg-color-blue" src="images/github-brands.svg" alt="github link"></a>
-                    <a href="#"><img class="svg-color-blue" src="images/linkedin-brands.svg" alt="linkedIn link"></a>
+                    <a href="Marko.Selchanec.CV.pdf" target="_blank"><img class="svg-color-blue" src="images/cv.svg" alt="CV link"></a>
+                    <a href="https://github.com/MarkoSelchanec" target="_blank"><img class="svg-color-blue" src="images/github-brands.svg" alt="github link"></a>
+                    <a href="https://www.linkedin.com/in/marko-selchanec-8a208b1ab/" target="_blank"><img class="svg-color-blue" src="images/linkedin-brands.svg" alt="linkedIn link"></a>
                 </div>
             </div>
                
@@ -51,8 +53,6 @@
 
     <main>
 
-        
-
         <div class="about-me-header container">
             <a href="#" id="content-avatar"><img class="content-avatar" src="images/me2.png" alt="my avatar"></a>
             <h1 class="content-name"> Marko Selchanec</h1>
@@ -60,7 +60,7 @@
 
         <h5 class="content-description">&lt;... front end web developer .../&gt;</h5>
 
-        <div class="about-me-container">
+        <div class="about-me-container shadow">
 
             <div class="about-me-text container">
                 <p>
@@ -97,25 +97,59 @@
 
         </div> 
 
-        <div class="btn-container">
+        <div class="btn-container shadow">
 
-            <button id="btn-1" class="content-button"> { <span class="content-button-name"> Toolkit </span> } </button>
+            <button class="content-button"> { <span class="content-button-name"> Toolkit </span> } </button>
 
-            <button id="btn-2" class="content-button"> { <span class="content-button-name"> Projects </span> } </button>
+            <button class="content-button"> { <span class="content-button-name"> Projects </span> } </button>
 
-            <button id="btn-3" class="content-button"> { <span class="content-button-name"> Contact </span> } </button>
+            <button class="content-button"> { <span class="content-button-name"> Contact </span> } </button>
             
         </div>
 
-        <div id="btn-1" class="content-container hide swing-in-top-fwd">
-            <p>BTN 1</p>
+        <div id="content-1" class="content-container hide swing-in-top-fwd shadow">
+                
+            <h2>
+                Languages and libraries: 
+            </h2>
+            <ul>
+                <li><img class="tools-images svg-color-orange" src="images/html5-brands.svg" alt="HTML5 svg">  HTML5</li>
+                <li><img class="tools-images svg-color-blue" src="images/css3-alt-brands.svg" alt="CCS3 svg"> CSS3/SASS</li>
+                <li><img class="tools-images svg-color-purple" src="images/bootstrap-brands.svg" alt="BOOTSTRAP svg"> Bootstrap</li>
+                <li><img class="tools-images svg-color-yellow" src="images/js-square-brands.svg" alt="JAVASCRIPT svg">JavaScript</li>
+                <li><img class="tools-images svg-color-blue" src="images/jquery.png" alt="JQUERY img">JQuery</li>
+                <li><img class="tools-images" src="images/csharp.png" alt="CSharp img">C#</li>
+            </ul>
+            <h2>
+                Concepts:
+            </h2>
+            <ul>
+                <li>OOP</li>
+                <li>Version control</li>
+                <li>Ajax</li>
+                <li>API</li>
+                <li>JSON</li>
+            </ul>
+            <h2>
+                Version control: 
+            </h2>
+            <ul>
+                <li>Github</li>
+            </ul>
+            <h2>
+                Design tools: 
+            </h2>
+            <ul>
+                <li>Photoshop</li>
+                <li>GIMP</li>
+            </ul>
         </div> 
         
-        <div id="btn-2" class="content-container hide swing-in-top-fwd">
+        <div id="content-2" class="content-container hide swing-in-top-fwd shadow">
             <p>BTN 2</p>
         </div> 
 
-        <div id="btn-3" class="content-container hide swing-in-top-fwd">
+        <div id="content-3" class="content-container hide swing-in-top-fwd shadow">
             <p>BTN 3</p>
         </div> 
 

@@ -8,6 +8,10 @@ const meAvatarLink = document.getElementById("content-avatar");
 const burBar = document.getElementsByClassName("nav-burger")[0];
 const contentBtns = [...document.getElementsByClassName("content-button")];
 const contentPages = [...document.getElementsByClassName("content-container")];
+const projectsBtns= [...document.getElementsByClassName("btn-projects")];
+const skillsBtns = [...document.getElementsByClassName("btn-skills")];
+const contactBtns = [...document.getElementsByClassName("btn-contact")];
+
 
 // Resize nav
 
@@ -20,6 +24,7 @@ const windowSizeElements = () => {
         nav.classList.remove("apply-flex");
         navDrop.classList.remove("hide");
         navDrop.classList.add("apply-flex");
+        navDrop.classList.remove("show");
     }
     if(window.innerWidth > 600) {
         dropDownMedia.classList.add("hide");
@@ -40,8 +45,9 @@ window.addEventListener("resize", windowSizeElements)
 
 // Burger-bar
 
-burBar.addEventListener("click", () => {
+burBar.addEventListener("click", (e) => {
     navDrop.classList.toggle("show");
+    e.preventDefault();
 })
 
 meAvatarLink.addEventListener("mouseenter", () => {
@@ -53,18 +59,18 @@ meAvatarLink.addEventListener("mouseleave", () => {
 
 // Content-btns
 
-contentBtns[0].addEventListener("click", () => {
-    contentPages[0].classList.remove("hide");
-    contentPages[1].classList.add("hide");
-    contentPages[2].classList.add("hide"); 
-})
-contentBtns[1].addEventListener("click", () => {
-    contentPages[1].classList.remove("hide");
-    contentPages[0].classList.add("hide");
-    contentPages[2].classList.add("hide");
-})
-contentBtns[2].addEventListener("click", () => {
-    contentPages[2].classList.remove("hide");
-    contentPages[0].classList.add("hide");
-    contentPages[1].classList.add("hide");
-})
+const showPage = (iOne, iTwo, iThree) => {
+    contentPages[iOne].classList.remove("hide");
+    contentPages[iTwo].classList.add("hide");
+    contentPages[iThree].classList.add("hide"); 
+}
+
+contentBtns[0].addEventListener("click", () => showPage(0, 1, 2));
+projectsBtns.forEach(e => e.addEventListener("click", () => showPage(0, 1, 2)));
+
+
+contentBtns[1].addEventListener("click", () => showPage(1, 0, 2));
+skillsBtns.forEach(e => e.addEventListener("click", () => showPage(1, 0, 2)));
+
+contentBtns[2].addEventListener("click", () => showPage(2, 1, 0));
+contactBtns.forEach(e => e.addEventListener("click", () => showPage(2, 1, 0)));
