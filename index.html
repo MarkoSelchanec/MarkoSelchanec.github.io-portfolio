@@ -18,8 +18,8 @@
 
             <div class="apply-flex">
                 <ul class="navbar-list apply-flex">
-                    <li><a href="#content-1" class="btn-projects">Projects</a></li>
-                    <li><a href="#content-2" class="btn-skills">Skills</a></li>
+                    <li><a href="#content-1" class="btn-projects">Skills</a></li>
+                    <li><a href="#content-2" class="btn-skills">Projects</a></li>
                     <li><a href="#content-3" class="btn-contact">Contact</a></li>
                 </ul>
             </div>
@@ -36,8 +36,8 @@
 
             <div class="nav-dropdown apply-flex">
                 <ul class="navbar-list apply-flex">
-                    <li><a href="#content-1" class="btn-projects">Projects</a></li>
-                    <li><a href="#content-2" class="btn-skills">Skills</a></li>
+                    <li><a href="#content-1" class="btn-projects">Skills</a></li>
+                    <li><a href="#content-2" class="btn-skills">Projects</a></li>
                     <li><a href="#content-3" class="btn-contact">Contact</a></li>
                 </ul>
                 <div class="nav-media">
@@ -97,13 +97,13 @@
 
         </div> 
 
-        <div class="btn-container shadow">
+        <div class="btn-container">
 
-            <button class="content-button"> { <span class="content-button-name"> Toolkit </span> } </button>
+            <button class="content-button shadow"> { <span class="content-button-name"> Toolkit </span> } </button>
 
-            <button class="content-button"> { <span class="content-button-name"> Projects </span> } </button>
+            <button class="content-button shadow"> { <span class="content-button-name"> Projects </span> } </button>
 
-            <button class="content-button"> { <span class="content-button-name"> Contact </span> } </button>
+            <button class="content-button shadow"> { <span class="content-button-name"> Talk to me </span> } </button>
             
         </div>
 
@@ -150,7 +150,18 @@
         </div> 
 
         <div id="content-3" class="content-container hide swing-in-top-fwd shadow">
-            <p>BTN 3</p>
+            
+            <form class="my-form" id="my-form" action="https://formspree.io/mknqkdyd"method="POST">
+                <label>Subject: </label>
+                <input class="shadow" id="form-subject" name="_subject"/>
+                <label>Email: </label>
+                <input class="shadow" id="form-email" type="email" name="email" />
+                <label>Message:</label>
+                <textarea class="shadow" aria-valuemin="asdasd" id="form-message" type="text" rows="5" name="message"> </textarea>
+                <button id="my-form-button" class="form-btn shadow">Submit</button>
+                <p id="my-form-status"></p>
+            </form>
+                
         </div> 
 
     </main>
