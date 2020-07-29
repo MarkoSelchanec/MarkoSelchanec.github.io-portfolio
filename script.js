@@ -12,7 +12,6 @@ const projectsBtns= [...document.getElementsByClassName("btn-projects")];
 const skillsBtns = [...document.getElementsByClassName("btn-skills")];
 const contactBtns = [...document.getElementsByClassName("btn-contact")];
 
-
 // Resize nav
 
 const windowSizeElements = () => {

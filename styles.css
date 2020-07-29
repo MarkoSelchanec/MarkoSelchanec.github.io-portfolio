@@ -183,8 +183,8 @@ ul a {
     }
 
     .nav-media img {
-        height: 4em;
-        margin: 2.5em;
+        height: 3em;
+        margin: 1.5em;
     }
 }
 
@@ -301,6 +301,9 @@ main {
     border-radius: 15px;
 }
 
+.content-button span:hover {
+    color: #ca7020;
+}
 .selected {
     background-color: #1e1e1e;
 }
@@ -330,7 +333,7 @@ main {
     margin-bottom: 1em;
 }
 
-.content-container ul {
+.toolkit-container ul {
     margin-bottom: 1em;
     display: flex;
     flex-wrap: wrap;
@@ -353,6 +356,7 @@ main {
 
 .my-form input,
 .my-form textarea {
+    width: 100%;
     border-radius: 5px;
     font-size: 1.5rem;
     margin: .5em 0;
@@ -368,6 +372,87 @@ main {
     color: #e7e7e7;
     cursor: pointer;
     border-radius: 15px;
+}
+
+.project-display,
+.lap-top {
+    position: relative;
+}
+
+.lap-top {
+    width: 250px;
+}
+
+.phone {
+    position: absolute;
+    height: 115px;
+    right: 0;
+    bottom: 0;
+}
+
+.phone-cover {
+    z-index: 2;
+}
+
+.phone-img {
+    height: 99px;
+    right: 39px;
+    bottom: 9px;
+    object-fit: cover;
+}
+
+.project-video {
+    width: 158px;
+    height: 103px;
+    position: absolute;
+    top: 17px;
+    left: 47px;
+    object-fit: cover;
+}
+
+.project-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description a {
+    color: #e7e7e7;
+    text-decoration: none;
+}
+
+.project-description h2 a:hover {
+    color: #ca7020;
+}
+
+.project-description h2 {
+    color: #ca7020;
+    font-size: 1.9rem;
+}
+
+.project-description ul a {
+    font-size: 1rem;
+    color: #ca7020;
+}
+
+.project-description a:hover {
+    background: none;
+    color: #e7e7e7;
+    width: 100%;
+}
+
+.project-description ul {
+    list-style-type: square;
+}
+
+.project-description ul li {
+    display: list-item;
+    font-size: 1rem;
 }
 
 @media (min-width: 400px) {
@@ -466,6 +551,18 @@ main {
     .my-form textarea {
         width: 60%;
     } 
+
+    .project-div{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .project-description {
+        flex-direction: column;
+        width: 50%;
+    }
+    
 }
 
 @media (min-width: 1360px) {
@@ -480,6 +577,33 @@ main {
     
     .content-button {
         font-size: 2.5em;
+    }
+
+    .lap-top {
+        width: 350px;
+    }
+    
+    .project-video {
+        width: 222px;
+        height: 145px;
+        top: 23px;
+        left: 65px;
+    }
+
+    .project-div{
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .phone {
+        height: 160px;
+    }
+    
+    .phone-img {
+        height: 140px;
+        right: 54px;
+        bottom: 10px;
     }
 }
 
