@@ -53,6 +53,10 @@ Contents:
     filter: invert(57%) sepia(37%) saturate(6287%) hue-rotate(345deg) brightness(97%) contrast(93%);
 }
 
+.svg-color-hover {
+    filter: invert(47%) sepia(81%) saturate(469%) hue-rotate(347deg) brightness(89%) contrast(95%);
+}
+
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -433,13 +437,13 @@ main {
     text-decoration: none;
 }
 
-.project-description h2 a:hover {
-    color: #ca7020;
-}
-
 .project-description h2 {
     color: #ca7020;
     font-size: 1.9rem;
+}
+
+.project-description h2 span {
+    color: #e7e7e7;
 }
 
 .project-description ul a {

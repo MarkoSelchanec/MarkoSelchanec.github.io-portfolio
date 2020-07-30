@@ -11,6 +11,23 @@ const contentPages = [...document.getElementsByClassName("content-container")];
 const projectsBtns= [...document.getElementsByClassName("btn-projects")];
 const skillsBtns = [...document.getElementsByClassName("btn-skills")];
 const contactBtns = [...document.getElementsByClassName("btn-contact")];
+const svgLinks = [...document.getElementsByClassName("svg-link")];
+const svgs = [...document.getElementsByClassName("svg-img")];
+
+
+// svg hover 
+
+for (let u = 0; u < svgLinks.length; u++) {
+    svgLinks[u].addEventListener("mouseenter", () => {
+        svgs[u].classList.add("svg-color-hover")
+    })
+}
+
+for (let u = 0; u < svgLinks.length; u++) {
+    svgLinks[u].addEventListener("mouseleave", () => {
+        svgs[u].classList.remove("svg-color-hover")
+    })
+}
 
 // Resize nav
 
