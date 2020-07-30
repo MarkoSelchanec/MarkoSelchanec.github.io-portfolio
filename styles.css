@@ -273,6 +273,7 @@ main {
 
 .sub-container {
     margin: 0 auto;
+    padding: 0 .5rem;
 }
 
 .sub-container p {
@@ -592,6 +593,10 @@ main {
 }
 
 @media (min-width: 1360px) {
+
+    .about-me-text {
+        width: 60%;
+    }
 
     .sub-container {
         flex-direction: row;
