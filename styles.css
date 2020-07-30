@@ -78,15 +78,6 @@ Contents:
     box-shadow: none;
 }
 
-.noSelect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-}
 
 /*==============================
 2.Header 
@@ -266,7 +257,7 @@ main {
 
 .about-me-text {
     width: 80%;
-    padding: 1em 0;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -458,7 +449,6 @@ main {
 .project-description a:hover {
     background: none;
     color: #e7e7e7;
-    width: 100%;
 }
 
 .project-description ul {
@@ -468,6 +458,16 @@ main {
 .project-description ul li {
     display: list-item;
     font-size: 1rem;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.project-links * {
+    margin-right: 1rem;
 }
 
 @media (min-width: 400px) {
@@ -494,6 +494,10 @@ main {
         padding: 0;
     }
 
+    .about-me-text {
+        padding: 3rem;
+    }
+
     .content-container {
         width: 84%;
     }
@@ -506,6 +510,10 @@ main {
     .my-form textarea {
         width: 80%;
     }   
+
+    .project-links {
+        justify-content: center;
+    }
 
 }
 
@@ -531,7 +539,7 @@ main {
     }
 
     .about-me-concepts {
-        padding: .5em 1em;
+        padding: 0 1em;
     }
 
     .sub-container {
@@ -578,6 +586,9 @@ main {
         width: 50%;
     }
     
+    .project-links {
+        justify-content: flex-start;
+    }
 }
 
 @media (min-width: 1360px) {
