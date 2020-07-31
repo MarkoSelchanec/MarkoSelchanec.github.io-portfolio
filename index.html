@@ -1,219 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet"> 
-    <link rel="icon" href="images/me2.png">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/me2.png" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Marko's portfolio</title>
-</head>
-<body>   
-
+  </head>
+  <body>
     <header>
+      <a class="nav-burger" href="#"
+        ><img
+          class="nav-burger-img svg-color-blue"
+          src="images/bars-solid.svg"
+          alt="burger bar"
+      /></a>
 
-        <a class="nav-burger" href="#"><img class="nav-burger-img svg-color-blue" src="images/bars-solid.svg" alt="burger bar"></a>
+      <nav class="navbar hide disable-select container apply-flex">
+        <div class="apply-flex">
+          <ul class="navbar-list apply-flex">
+            <li><a href="#content-1" class="btn-projects">Skills</a></li>
+            <li><a href="#content-2" class="btn-skills">Projects</a></li>
+            <li><a href="#content-3" class="btn-contact">Contact</a></li>
+          </ul>
+        </div>
 
-        <nav class="navbar hide disable-select container apply-flex">
+        <div class="nav-outer-media">
+          <a
+            href="https://drive.google.com/file/d/1maP14CWP7l_uYpxZzL_A2Eqgb2_rbjkt/view?usp=sharing"
+            class="svg-link"
+            target="_blank"
+            ><img
+              class="nav-img svg-img svg-color-blue"
+              src="images/cv.svg"
+              alt="CV link"
+          /></a>
+          <a
+            href="https://github.com/MarkoSelchanec"
+            class="svg-link"
+            target="_blank"
+            ><img
+              class="nav-img svg-img svg-color-blue"
+              src="images/github-brands.svg"
+              alt="github link"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/marko-selchanec-8a208b1ab/"
+            class="svg-link"
+            target="_blank"
+            ><img
+              class="nav-img svg-img svg-color-blue"
+              src="images/linkedin-brands.svg"
+              alt="linkedIn link"
+          /></a>
+        </div>
+      </nav>
 
-            <div class="apply-flex">
-                <ul class="navbar-list apply-flex">
-                    <li><a href="#content-1" class="btn-projects">Skills</a></li>
-                    <li><a href="#content-2" class="btn-skills">Projects</a></li>
-                    <li><a href="#content-3" class="btn-contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="nav-outer-media">
-                <a href="https://drive.google.com/file/d/1maP14CWP7l_uYpxZzL_A2Eqgb2_rbjkt/view?usp=sharing" class="svg-link" target="_blank"><img class="nav-img svg-img svg-color-blue" src="images/cv.svg" alt="CV link"></a>
-                <a href="https://github.com/MarkoSelchanec" class="svg-link" target="_blank"><img class="nav-img svg-img svg-color-blue" src="images/github-brands.svg" alt="github link"></a>
-                <a href="https://www.linkedin.com/in/marko-selchanec-8a208b1ab/" class="svg-link" target="_blank"><img class="nav-img svg-img svg-color-blue" src="images/linkedin-brands.svg" alt="linkedIn link"></a>
-            </div>
-               
-        </nav>
-
-        <nav class="navbar-dropdown">
-
-            <div class="nav-dropdown apply-flex">
-                <ul class="navbar-list apply-flex">
-                    <li><a href="#content-1" class="btn-projects">Skills</a></li>
-                    <li><a href="#content-2" class="btn-skills">Projects</a></li>
-                    <li><a href="#content-3" class="btn-contact">Contact</a></li>
-                </ul>
-                <div class="nav-media">
-                    <a href="https://drive.google.com/file/d/1maP14CWP7l_uYpxZzL_A2Eqgb2_rbjkt/view?usp=sharing" class="svg-link" target="_blank"><img class="svg-img svg-color-blue" src="images/cv.svg" alt="CV link"></a>
-                    <a href="https://github.com/MarkoSelchanec" class="svg-link" target="_blank"><img class="svg-img svg-color-blue" src="images/github-brands.svg" alt="github link"></a>
-                    <a href="https://www.linkedin.com/in/marko-selchanec-8a208b1ab/" class="svg-link" target="_blank"><img class="svg-img svg-color-blue" src="images/linkedin-brands.svg" alt="linkedIn link"></a>
-                </div>
-            </div>
-               
-        </nav>
-
+      <nav class="navbar-dropdown">
+        <div class="nav-dropdown apply-flex">
+          <ul class="navbar-list apply-flex">
+            <li><a href="#content-1" class="btn-projects">Skills</a></li>
+            <li><a href="#content-2" class="btn-skills">Projects</a></li>
+            <li><a href="#content-3" class="btn-contact">Contact</a></li>
+          </ul>
+          <div class="nav-media">
+            <a
+              href="https://drive.google.com/file/d/1maP14CWP7l_uYpxZzL_A2Eqgb2_rbjkt/view?usp=sharing"
+              class="svg-link"
+              target="_blank"
+              ><img
+                class="svg-img svg-color-blue"
+                src="images/cv.svg"
+                alt="CV link"
+            /></a>
+            <a
+              href="https://github.com/MarkoSelchanec"
+              class="svg-link"
+              target="_blank"
+              ><img
+                class="svg-img svg-color-blue"
+                src="images/github-brands.svg"
+                alt="github link"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/marko-selchanec-8a208b1ab/"
+              class="svg-link"
+              target="_blank"
+              ><img
+                class="svg-img svg-color-blue"
+                src="images/linkedin-brands.svg"
+                alt="linkedIn link"
+            /></a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
+      <div class="about-me-header container">
+        <a href="#" id="content-avatar"
+          ><img class="content-avatar" src="images/me2.png" alt="my avatar"
+        /></a>
+        <h1 class="content-name">Marko Selchanec</h1>
+      </div>
 
-        <div class="about-me-header container">
-            <a href="#" id="content-avatar"><img class="content-avatar" src="images/me2.png" alt="my avatar"></a>
-            <h1 class="content-name"> Marko Selchanec</h1>
+      <h5 class="content-description">
+        &lt;... front end web developer .../&gt;
+      </h5>
+
+      <div class="about-me-container shadow">
+        <div class="about-me-text container">
+          <p>
+            My name is Marko. <br />I am a widely skilled creative with a
+            passion for web development and technology. I love learning, and I
+            want to become the best developer I can be. I believe that ideas
+            come first, tools come second - having defined a goal, I will find a
+            way and will persist until i reach it.
+          </p>
         </div>
-
-        <h5 class="content-description">&lt;... front end web developer .../&gt;</h5>
-
-        <div class="about-me-container shadow">
-
-            <div class="about-me-text container">
-                <p>
-                    My name is Marko. <br>I am a widely skilled creative with a passion for web development and technology. I love learning, and I want to become the best developer I can be. I believe that ideas come first, tools come second - having defined a goal, I will find a way and will persist until i reach it.
-                </p>
+        <div class="about-me-concepts apply-flex">
+          <div class="sub-container">
+            <div>
+              <img
+                class="about-me-images svg-color-blue"
+                src="images/algorithm.svg"
+                alt="svg"
+              />
             </div>
-            <div class="about-me-concepts apply-flex">
-                <div class="sub-container">
-                    <div>
-                        <img class="about-me-images svg-color-blue" src="images/algorithm.svg" alt="svg">
-                    </div>
-                    <div>
-                        <p>"... algorythmic approach to problem solving combined with a good eye for design ..."</p>
-                    </div>
-                </div>
-                <div class="sub-container">
-                    <div>
-                        <img class="about-me-images svg-color-blue" src="images/goal.svg" alt="svg">
-                    </div>
-                    <div>
-                        <p>"... Goal oriented and motivated developer attracted by the possibility of constant growth ..."</p>
-                    </div>
-                </div>
-                <div class="sub-container">
-                    <div>
-                        <img class="about-me-images svg-color-blue" src="images/team.png" alt="svg">
-                    </div>
-                    <div>
-                        <p>"... thrives in a team environment and works well with others ..."</p>
-                    </div>
-                </div>
-                
+            <div>
+              <p>
+                "... algorythmic approach to problem solving combined with a
+                good eye for design ..."
+              </p>
             </div>
-
-        </div> 
-
-        <div class="btn-container">
-
-            <button class="content-button shadow"> { <span class="content-button-name"> Toolkit </span> } </button>
-
-            <button class="content-button shadow"> { <span class="content-button-name"> Projects </span> } </button>
-
-            <button class="content-button shadow"> { <span class="content-button-name"> Talk to me </span> } </button>
-            
+          </div>
+          <div class="sub-container">
+            <div>
+              <img
+                class="about-me-images svg-color-blue"
+                src="images/goal.svg"
+                alt="svg"
+              />
+            </div>
+            <div>
+              <p>
+                "... goal oriented and motivated developer attracted by the
+                possibility of constant growth ..."
+              </p>
+            </div>
+          </div>
+          <div class="sub-container">
+            <div>
+              <img
+                class="about-me-images svg-color-blue"
+                src="images/team.png"
+                alt="svg"
+              />
+            </div>
+            <div>
+              <p>
+                "... thrives in a team environment and works well with others
+                ..."
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div id="content-1" class="content-container toolkit-container hide swing-in-top-fwd shadow">
-                
-            <h2>
-                Languages and libraries: 
-            </h2>
-            <ul>
-                <li><img class="tools-images svg-color-orange" src="images/html5-brands.svg" alt="HTML5 svg">HTML5</li>
-                <li><img class="tools-images svg-color-blue" src="images/css3-alt-brands.svg" alt="CCS3 svg"> CSS3/SASS</li>
-                <li><img class="tools-images svg-color-purple" src="images/bootstrap-brands.svg" alt="BOOTSTRAP svg"> Bootstrap</li>
-                <li><img class="tools-images svg-color-yellow" src="images/js-square-brands.svg" alt="JAVASCRIPT svg">JavaScript</li>
-                <li><img class="tools-images svg-color-blue" src="images/jquery.png" alt="JQUERY img">JQuery</li>
-                <li><img class="tools-images" src="images/csharp.png" alt="CSharp img">C#</li>
-            </ul>
-            <h2>
-                Concepts:
-            </h2>
-            <ul>
-                <li>OOP</li>
-                <li>Version control</li>
-                <li>Ajax</li>
-                <li>API</li>
-                <li>JSON</li>
-            </ul>
-            <h2>
-                Version control: 
-            </h2>
-            <ul>
-                <li>Github</li>
-            </ul>
-            <h2>
-                Design tools: 
-            </h2>
-            <ul>
-                <li>Photoshop</li>
-                <li>GIMP</li>
-            </ul>
-        </div> 
-        
-        <div id="content-2" class="content-container project-container hide swing-in-top-fwd shadow">
+      <div class="btn-container">
+        <button class="content-button shadow">
+          { <span class="content-button-name"> Toolkit </span> }
+        </button>
 
-            <div class="project-div">
-                <div class="project-display">
-                        <img class="lap-top" src="images/laptop.png" alt="lap top">
-                        <img class="project-video" src="gif/insulinskaporta.gif" alt="associacion for children's diabetes project gif">
-                        <img class="phone phone-cover" src="images/phone.png" alt="phone image"> 
-                        <img class="phone phone-img" src="images/phone-insulinskaporta.png" alt="phone image"> 
-                </div>
-                <div class="project-description">
-                    <h2>{ <span class="content-button-name">Association for children's diabetes of Macedonia</span> }</h2>
-                    <ul>
-                        <li>Front end solution utilizing HTML, CSS and JavaScript</li>
-                        <li>Developed in a team environment with Agile methodology
-                        </li>
-                        <li>Fully responsive design</li>
-                    </ul>
-                    <div class="project-links">
-                        <a href="https://github.com/sedc-codecademy/sp2020-cp05-acd" class="svg-link" target="_blank"><img class="nav-img svg-img svg-color-blue" src="images/github-brands.svg" alt="github link"></a>
-                        <a href="https://markoselchanec.github.io/#" class="svg-link" target="_blank"><img class="nav-img svg-img svg-color-blue" src="images/globe-solid.svg" alt="hosting link"></a>
-                    </div>
-                </div>
+        <button class="content-button shadow">
+          { <span class="content-button-name"> Projects </span> }
+        </button>
+
+        <button class="content-button shadow">
+          { <span class="content-button-name"> Talk to me </span> }
+        </button>
+      </div>
+
+      <div
+        id="content-1"
+        class="content-container toolkit-container hide swing-in-top-fwd shadow"
+      >
+        <h2>
+          Languages and libraries:
+        </h2>
+        <ul>
+          <li>
+            <img
+              class="tools-images svg-color-orange"
+              src="images/html5-brands.svg"
+              alt="HTML5 svg"
+            />HTML5
+          </li>
+          <li>
+            <img
+              class="tools-images svg-color-blue"
+              src="images/css3-alt-brands.svg"
+              alt="CCS3 svg"
+            />
+            CSS3/SASS
+          </li>
+          <li>
+            <img
+              class="tools-images svg-color-purple"
+              src="images/bootstrap-brands.svg"
+              alt="BOOTSTRAP svg"
+            />
+            Bootstrap
+          </li>
+          <li>
+            <img
+              class="tools-images svg-color-yellow"
+              src="images/js-square-brands.svg"
+              alt="JAVASCRIPT svg"
+            />JavaScript
+          </li>
+          <li>
+            <img
+              class="tools-images svg-color-blue"
+              src="images/jquery.png"
+              alt="JQUERY img"
+            />JQuery
+          </li>
+          <li>
+            <img
+              class="tools-images"
+              src="images/csharp.png"
+              alt="CSharp img"
+            />C#
+          </li>
+        </ul>
+        <h2>
+          Concepts:
+        </h2>
+        <ul>
+          <li>OOP</li>
+          <li>Version control</li>
+          <li>Ajax</li>
+          <li>API</li>
+          <li>JSON</li>
+        </ul>
+        <h2>
+          Version control:
+        </h2>
+        <ul>
+          <li>Github</li>
+        </ul>
+        <h2>
+          Design tools:
+        </h2>
+        <ul>
+          <li>Photoshop</li>
+          <li>GIMP</li>
+        </ul>
+      </div>
+
+      <div
+        id="content-2"
+        class="content-container project-container hide swing-in-top-fwd shadow"
+      >
+        <div class="project-div">
+          <div class="project-display">
+            <img class="lap-top" src="images/laptop.png" alt="lap top" />
+            <img
+              class="project-video"
+              src="gif/insulinskaporta.gif"
+              alt="associacion for children's diabetes project gif"
+            />
+            <img
+              class="phone phone-cover"
+              src="images/phone.png"
+              alt="phone image"
+            />
+            <img
+              class="phone phone-img"
+              src="images/phone-insulinskaporta.png"
+              alt="phone image"
+            />
+          </div>
+          <div class="project-description">
+            <h2>
+              {
+              <span class="content-button-name"
+                >Association for children's diabetes of Macedonia</span
+              >
+              }
+            </h2>
+            <ul>
+              <li>Front end solution utilizing HTML, CSS and JavaScript</li>
+              <li>Developed in a team environment with Agile methodology</li>
+              <li>Fully responsive design</li>
+            </ul>
+            <div class="project-links">
+              <a
+                href="https://github.com/sedc-codecademy/sp2020-cp05-acd"
+                class="svg-link"
+                target="_blank"
+                ><img
+                  class="nav-img svg-img svg-color-blue"
+                  src="images/github-brands.svg"
+                  alt="github link"
+              /></a>
+              <a
+                href="https://markoselchanec.github.io/#"
+                class="svg-link"
+                target="_blank"
+                ><img
+                  class="nav-img svg-img svg-color-blue"
+                  src="images/globe-solid.svg"
+                  alt="hosting link"
+              /></a>
             </div>
-            <br>
-            <div class="project-div">
-                <div class="project-display">
-                        <img class="lap-top" src="images/laptop.png" alt="lap top">
-                        <img class="project-video" src="gif/countrySearch.gif" alt="country search gif">        
-                </div>
-                <div class="project-description">
-                    <h2>{ <span class="content-button-name">Country Search</span> }</h2>
-                    <ul>
-                        <li>Small scale front end solution utilizing HTML, CSS and JavaScript</li>
-                        <li>Display country information by search query or having one
-                            picked for you at random</li>
-                        <li>Fetched JSON from:<a href="https://restcountries.eu/" target="_blank">restcountries</a></li>
-                    </ul>
-                    <div class="project-links">
-                        <a href="https://github.com/MarkoSelchanec/MarkoSelchanec.github.io.CountrySearch" class="svg-link" target="_blank"><img class="nav-img svg-img svg-color-blue" src="images/github-brands.svg" alt="github link"></a>
-                        <a href="https://markoselchanec.github.io/MarkoSelchanec.github.io.CountrySearch/" class="svg-link" target="_blank"><img class="nav-img svg-img svg-color-blue" src="images/globe-solid.svg" alt="hosting link"></a>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <br />
+        <div class="project-div">
+          <div class="project-display">
+            <img class="lap-top" src="images/laptop.png" alt="lap top" />
+            <img
+              class="project-video"
+              src="gif/countrySearch.gif"
+              alt="country search gif"
+            />
+          </div>
+          <div class="project-description">
+            <h2>{ <span class="content-button-name">Country Search</span> }</h2>
+            <ul>
+              <li>
+                Small scale front end solution utilizing HTML, CSS and
+                JavaScript
+              </li>
+              <li>
+                Display country information by search query or having one picked
+                for you at random
+              </li>
+              <li>
+                Fetched JSON from:<a
+                  href="https://restcountries.eu/"
+                  target="_blank"
+                  >restcountries</a
+                >
+              </li>
+            </ul>
+            <div class="project-links">
+              <a
+                href="https://github.com/MarkoSelchanec/MarkoSelchanec.github.io.CountrySearch"
+                class="svg-link"
+                target="_blank"
+                ><img
+                  class="nav-img svg-img svg-color-blue"
+                  src="images/github-brands.svg"
+                  alt="github link"
+              /></a>
+              <a
+                href="https://markoselchanec.github.io/MarkoSelchanec.github.io.CountrySearch/"
+                class="svg-link"
+                target="_blank"
+                ><img
+                  class="nav-img svg-img svg-color-blue"
+                  src="images/globe-solid.svg"
+                  alt="hosting link"
+              /></a>
             </div>
-            
-        </div> 
+          </div>
+        </div>
+      </div>
 
-        <div id="content-3" class="content-container hide swing-in-top-fwd shadow">
-            
-            <form class="my-form" id="my-form" action="https://formspree.io/mknqkdyd"method="POST">
-                <label>Subject: </label>
-                <input class="shadow" id="form-subject" name="_subject"/>
-                <label>Email: </label>
-                <input class="shadow" id="form-email" type="email" name="email" />
-                <label>Message:</label>
-                <textarea class="shadow" aria-valuemin="asdasd" id="form-message" type="text" rows="5" name="message"> </textarea>
-                <button id="my-form-button" class="form-btn shadow">Submit</button>
-                <p id="my-form-status"></p>
-            </form>
-                
-        </div> 
-
+      <div
+        id="content-3"
+        class="content-container hide swing-in-top-fwd shadow"
+      >
+        <form
+          class="my-form"
+          id="my-form"
+          action="https://formspree.io/mknqkdyd"
+          method="POST"
+        >
+          <label>Subject: </label>
+          <input class="shadow" id="form-subject" name="_subject" />
+          <label>Email: </label>
+          <input class="shadow" id="form-email" type="email" name="email" />
+          <label>Message:</label>
+          <textarea
+            class="shadow"
+            aria-valuemin="asdasd"
+            id="form-message"
+            type="text"
+            rows="5"
+            name="message"
+          >
+          </textarea>
+          <button id="my-form-button" class="form-btn shadow">Submit</button>
+          <p id="my-form-status"></p>
+        </form>
+      </div>
     </main>
 
     <footer class="footer">
-
-        <p>Designed and coded by Marko Selchanec || 2020</p> 
-        
+      <p>Designed and coded by Marko Selchanec || 2020</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
